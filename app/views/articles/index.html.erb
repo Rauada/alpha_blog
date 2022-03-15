@@ -1,0 +1,28 @@
+<h1>Articles listing page</h1>
+
+<table>
+  <!-- table head -->
+  <thead>
+    <!-- table row -->
+    <tr>
+      <!-- table heading -->
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <%# table body %>
+  <tbody>
+    <% @articles.each do |article| %>
+      <%# table row %>
+      <tr>
+        <%# table data %>
+      <td><%= article.title %></td>
+      <td><%= article.description %></td>
+      <td>Placeholder</td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
